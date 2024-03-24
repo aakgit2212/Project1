@@ -16,6 +16,10 @@
      package:
         name: default-jdk
         state: present
+  -  name: Install Docker
+     package:
+        name: docker-ce 
+
   -  name: Copy agent.jar file
      copy:
        src: /home/atif/Downloads/agent.jar
